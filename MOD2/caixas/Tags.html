@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        header > h1 {
+            box-shadow: inset 2px 1px 14px 6px black;
+            /*Sombra para dentro*/
+        }
+        nav{
+            background-color: rgb(89, 86, 86);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.484);
+            /*1-o px é a direção horizontal positivo a direita e negativo a esquerda
+              2- é direção vertical negativo para cima positivo para baixo agora 
+              3- é o blur 
+              4- é o espalhamento da sombra
+              5- é a cor da sombra
+              ele é uma shorthand
+              */
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.484);
+            /*se tivesse 2 px mexeriam no superio esquerdo e enferior a direura o 1 e o 2 seria superior direito e inferio equerdo
+            expl:border-radius: 20px 10px; */
+            /*border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              border-bottom-left-radius: 10px;}*/
+
+        }
+        article{
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: rgb(184, 157, 157);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+<h1>Meu site</h1>
+<nav>
+    <a href="">Link</a>
+    <a href="">Link</a>
+    <a href="">Link</a>
+    <a href="">Link</a>
+    <a href="">Link</a>
+</nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            Esportes Política E TEcnologias
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o brazil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ipsa distinctio culpa possimus. Perferendis asperiores odit eos ipsam ipsum labore. Excepturi incidunt explicabo quae sit praesentium? Ratione, hic voluptatem. Nam.</p>
+                <aside>
+                    <p>Artigo escrito po Jóse da silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+<p>Desenvolvio Pelo Curso em video</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+    <style>
+         @font-face {
+            font-family:'love';
+            src: url('fonts/Olondona.otf') format('opentype'), url('fonts/OldLondon.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;}
+        body{
+            font-family:'Courier New', Courier, monospace;
+            /*arial é uma fonte sans-serif*/
+            /* times new roal é serif*/
+            /*Courier New é monoespaçada*/
+            /*TIPOS DE FONTE :
+            SERIFADAS:que tem serifas
+            SAS-SERIF:que não tem serifas
+            MANOESPAÇADAS:que tem um espaçamento igual para carateres letras e glifes
+            HANDWRITING/script:serião as cursivas que se assemelham as escritura humana
+            DISPLAY:a que não se encacha em nenhuma das anteriores ela não tem um padrão
+       Css web safe font combinations site para ver combinações
+       voce pode usar genericas com "Sans-serif";"Serif" e "monospace"
+            */
+            font-size: 16px;
+            
+            /*
+            Medidas Absolutas
+            cm:centimetros, mm:milimetros, in:polrgadas ,px:pixel , pt:ponto impressão , pc:paicas          
+            Medidas Relativas
+            em:1em=16px , ex, rem: do root do bofy da font family, vw:viewpor-width largura em %, vh:viewpor-height altura em %
+            */
+          /*  font-weight: normal;
+           /* font-style: italic;
+          /*  text-decoration: underline;
+            /*lighter normal bold bolder*/
+        }
+      h1{
+        
+        /*shorthand font
+        -font style -> font-weight -> font size -> font size -> font-fmily
+        /*font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        font-size: 3em;
+        font-style: italic;*/
+        font: italic bolder 3em 'verdana',sans-serif;
+        }
+        h2{
+            font: bold 2em 'love',sans-serif;
+            /*Usamos num site normalmente 3 a 4 fontes */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi delectus enim nisi natus repellat cumque quod consectetur. Laborum eaque obcaecati ut iusto temporibus ducimus delectus dignissimos, excepturi asperiores aliquid odio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis neque quae saepe sunt, totam natus facere voluptatum! Quo ab optio, qui ipsum deserunt reprehenderit sit tempora in quaerat nostrum facilis?</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure quaerat officia, accusamus debitis sit maxime voluptates unde similique! Officiis incidunt vero quasi corporis, fuga maxime minima ipsum officia repellendus.</p>
+</body>
+</html>

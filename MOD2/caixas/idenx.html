@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModels</title>
+    <style>
+        /*width = largura
+height = altura
+padding acochoamento ou prenchimento é o espaçamento dento do conteudo 
+border é borada da box 
+outline é traçado é fora do elemento
+margin é margen de uma box é o espaçamento fora do conteudo 
+Tipos de Caixa 
+BOX LEVEL ele ocupa largura inteira da tela e quebra linha nos elemento "BLOCK" 
+Expl:div,h1,h2..... main,header,nav,article,aside,footer,form,video
+INLINE-LEVEL ele não ocupa a largura intera só o necessario do elemento "INLINE" 
+Expl : span , a , code , small , strong , em , sup e sub ,label ,  button , input , select
+*/
+h1{/*Box level*/
+    background-color: lightgray;
+    height: 300px;
+    width: 300px;/*
+    border-width: 7px;
+    border-style: solid;
+    border-color: blue;*/
+    border: 10px solid blue;
+    padding: 2px  4px 6px 8px ;
+    /*Pense num relogio cima direita baixo esquerda sentido horario se voce colocar 2 valores o primeiro vai pro top e bottom e o segundo vai para o left e right*/
+    margin: auto ;
+    outline: 5px dashed red;
+   /*widht style color =  shorthand*/
+   
+}
+a{/*Inline-level não podemos mexer em width e height*/
+    border: 10px solid red;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <h1>Exemplo d caixa box level </h1>
+    <p>Parágrafos também são exemplos de box-level,mas is <a href="">Links são tipos de inline-Level</a> vamos ver com isso funciona</p>
+    <!--user agent é sempre o seu navegador que ta exibindo seu conteudo como uma cofig basico-->
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div > p{
+        display: none;
+        /*Some com elemento e essa cetinha é indicando que p é filha da div*/
+    }
+    div:hover > p {
+        display: block;
+        color: white;
+        background-color: red;
+        width:300px;
+        /*quando passo o mouse emcima da diva exibe o p pq ele vira dysplay block*/
+    }
+    div:hover{
+        color:red;
+        /*Hover é uma pseudo classe ele interage quando passamos o mouse emcima do elemento*/
+    }
+</style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>PAsse mouse no texto abaixo</p>
+    <div>
+        passe mouse Aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+</body>
+</html>
