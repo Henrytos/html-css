@@ -14,14 +14,20 @@
         /*Imagem de fundo*/
         background-position: center center;
         /*Posição da imagem*/
-        background-repeat: repeat-y;
+        background-repeat: no-repeat;
         /*Repetição da imagen/eixo x e y*/
         background-size:cover ;
         /*tamanho da imagem de fundo em px ou % e cover e contain*/
+        background-attachment: fixed;
+        /*fixa a imagem*/
+        /*Shorthand - bacgroud
+        color > image > positio > repeat [size] >attachment
+        */
+        background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed;
     }
     main{
         background-color: white;
-        width: 400px;
+        max-width: 400px;
         padding: 10px;
         margin: auto;
         border: 1px solid darkblue;
