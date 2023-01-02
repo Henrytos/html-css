@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+  <h1>Primeiro form</h1>
+  <form action="cadostro.php" mettthod="POST" autocomplete="off"><!--serve para evitar a auto completação do formulario no site off ou on
+  o action é ação do formulario que podemos enviar para uma liguahem de programação lado mais back-end
+  exite 2 tipos de envio de formularios GET e POST vc altera lá no form co mettthod="GET/POST"
+  GET vem pro padrão e motra alguns dados importantes na URL ;usar para dados não senciveis como uma pesquisa "Até 3000 byte="300LETRAS"
+  POST ELE NÃO deixa aparecer os dados na url só aparecendo o action mais aparece no network unico jeito de deixa seguro é usar um protocolo ;usar quando dado for sesivel e não pode ser explito na URL
+  YSAR HTPPS 
+  -->
+        <p>
+          <label for="inome">Nome: </label><input type="text" name="nome" id="inome">
+        </p>
+    <p>
+      <label for="isobrenome">Sobrenome:</label> <input type="text" name="sobreno" id="isobrenome">
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+    </p><!--subimit==subemeter 
+      value é o texto que fica dentro do submit 
+      type é o tipo de formulario
+      name é forma que a liguagem php reconhece
+     id é forma que o css e html e js reconhecer  
+    label é forma de nó relacionar o texto e o input 
+    for vem do label e é a ligação dele com input colocando o "id" ou "name" depende da liguagem de programação use id pq sou time JS
+    usei um i astra do id para diferenciar do name
+    -->
+  </form>
+</body>
+</html>
