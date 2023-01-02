@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Exemplo de formulario</h1>
+  <form action="" method="post" autocomplete="on">
+
+    <p>
+      <label for="iest">Estado</label>
+
+      <select name="estado" id="iest">
+
+        <option value="" selected>---Escolha---</option>
+
+     <optgroup label="Região sudeste">
+        <option value="MG">Minas Gerais</option>
+        <option value="SP" >São paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+     </optgroup>
+     
+      <optgroup label="Região Nordeste">
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="MA">Maranhã</option>
+        <option value="PE">Pernambuco</option>
+      </optgroup>
+
+     </select>
+    </p>
+    <p>
+      <label for="ipro">Profissão</label>
+      <input type="text" name="pro" id="ipro" list="lstpro">
+      <!--o id e list precisão ser iguai-->
+      <datalist id="lstpro">
+        <option value="ADM">Adiministração</option>
+        <option value="DEV">Desenvolvedor</option>
+        <option value="PROF">Professor</option>
+        <option value="LIX">Lixeiro</option>
+      </datalist>
+    </p>
+    <p>
+      <label for="imsg">Mensagem:</label><br>
+      <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem" ></textarea>
+      <!--- style="resize: none"  não permite mexer no teamanho da mensagem-->
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+</body>
+</html>
